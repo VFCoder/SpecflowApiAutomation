@@ -35,7 +35,9 @@ namespace GroceryStoreApi.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "GroceryStoreApi", "Test Grocery Store API", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "GroceryStoreApi", "Test Grocery Store API\r\nThis feature file contains generic steps for maximum reus" +
+                    "ability\r\nDownside to this is longer scenarios and less descriptive step definiti" +
+                    "ons", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -82,7 +84,7 @@ namespace GroceryStoreApi.Features
                     "getApiStatus"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get API status", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 7
+#line 9
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -102,13 +104,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 8
+#line 10
  testRunner.Given("I set a GET request at the API endpoint /status", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 9
+#line 11
  testRunner.When("I send the API request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 10
+#line 12
  testRunner.Then("the API should return the status 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -124,7 +126,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "createNewCart"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create new cart", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 15
+#line 17
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -144,13 +146,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 16
+#line 18
  testRunner.Given("I set a POST request at the API endpoint /carts", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 17
+#line 19
  testRunner.When("I send the API request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 18
+#line 20
  testRunner.Then("the API should return the status 201", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
                 TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
@@ -165,7 +167,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "cartId",
                             "",
                             "cartId"});
-#line 19
+#line 21
  testRunner.And("the API response object should have the following properties:", ((string)(null)), table1, "And ");
 #line hidden
             }
@@ -181,7 +183,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "addItemToCart"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add item to cart", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 27
+#line 29
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -201,10 +203,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 28
+#line 30
     testRunner.Given("I have created a cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 29
+#line 31
     testRunner.And("I set a POST request at the API path variable endpoint /carts/<:cartId>/items", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
@@ -216,13 +218,13 @@ this.ScenarioInitialize(scenarioInfo);
                 table2.AddRow(new string[] {
                             "quantity",
                             "1"});
-#line 30
+#line 32
     testRunner.When("I input the following values in the request body:", ((string)(null)), table2, "When ");
 #line hidden
-#line 34
+#line 36
  testRunner.And("I send the API request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 35
+#line 37
  testRunner.Then("the API should return the status 201", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
                 TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
@@ -237,7 +239,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "itemId",
                             "",
                             "itemId"});
-#line 36
+#line 38
  testRunner.And("the API response object should have the following properties:", ((string)(null)), table3, "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
@@ -246,7 +248,7 @@ this.ScenarioInitialize(scenarioInfo);
                 table4.AddRow(new string[] {
                             "4646",
                             "1"});
-#line 40
+#line 42
     testRunner.And("the cart should now contain the following items:", ((string)(null)), table4, "And ");
 #line hidden
             }
@@ -262,7 +264,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "addMultipleItemsToCart"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add multiple items to cart", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 47
+#line 49
   this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -282,10 +284,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 48
+#line 50
     testRunner.Given("I have created a cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 49
+#line 51
     testRunner.And("I set a POST request at the API path variable endpoint /carts/<:cartId>/items", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
@@ -297,7 +299,7 @@ this.ScenarioInitialize(scenarioInfo);
                 table5.AddRow(new string[] {
                             "4643",
                             "2"});
-#line 50
+#line 52
     testRunner.When("I add the following items to the cart:", ((string)(null)), table5, "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
@@ -309,7 +311,7 @@ this.ScenarioInitialize(scenarioInfo);
                 table6.AddRow(new string[] {
                             "4643",
                             "2"});
-#line 54
+#line 56
     testRunner.Then("the cart should now contain the following items:", ((string)(null)), table6, "Then ");
 #line hidden
             }
@@ -325,7 +327,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "getItemsFromCart"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get items from cart", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 61
+#line 63
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -345,16 +347,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 62
+#line 64
     testRunner.Given("I have created a cart and added an item", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 63
+#line 65
     testRunner.And("I set a GET request at the API path variable endpoint /carts/<:cartId>/items", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 64
+#line 66
     testRunner.When("I send the API request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 65
+#line 67
     testRunner.Then("the API should return the status 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
                 TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
@@ -373,7 +375,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "quantity",
                             "1",
                             ""});
-#line 66
+#line 68
  testRunner.And("the API response object should have the following properties:", ((string)(null)), table7, "And ");
 #line hidden
             }
@@ -389,7 +391,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "updateItemQuantity"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Update item quantity", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 75
+#line 77
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -409,10 +411,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 76
+#line 78
     testRunner.Given("I have created a cart and added an item", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 77
+#line 79
     testRunner.And("I set a PATCH request at the API path variable endpoint /carts/<:cartId>/items/<:" +
                         "itemId>", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
@@ -422,13 +424,13 @@ this.ScenarioInitialize(scenarioInfo);
                 table8.AddRow(new string[] {
                             "quantity",
                             "2"});
-#line 78
+#line 80
     testRunner.When("I input the following values in the request body:", ((string)(null)), table8, "When ");
 #line hidden
-#line 81
+#line 83
  testRunner.And("I send the API request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 82
+#line 84
  testRunner.Then("the API should return the status 204", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
                 TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
@@ -443,7 +445,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "quantity",
                             "2",
                             ""});
-#line 83
+#line 85
     testRunner.And("the cart should now have the following properties:", ((string)(null)), table9, "And ");
 #line hidden
             }
@@ -459,7 +461,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "replaceItemInCart"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Replace item in cart", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 91
+#line 93
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -479,10 +481,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 92
+#line 94
     testRunner.Given("I have created a cart and added an item", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 93
+#line 95
     testRunner.And("I set a PUT request at the API path variable endpoint /carts/<:cartId>/items/<:it" +
                         "emId>", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
@@ -495,13 +497,13 @@ this.ScenarioInitialize(scenarioInfo);
                 table10.AddRow(new string[] {
                             "quantity",
                             "2"});
-#line 94
+#line 96
     testRunner.When("I input the following values in the request body:", ((string)(null)), table10, "When ");
 #line hidden
-#line 98
+#line 100
  testRunner.And("I send the API request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 99
+#line 101
  testRunner.Then("the API should return the status 204", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
                 TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
@@ -520,7 +522,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "quantity",
                             "2",
                             ""});
-#line 100
+#line 102
     testRunner.And("the cart should now have the following properties:", ((string)(null)), table11, "And ");
 #line hidden
             }
@@ -536,7 +538,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "DeleteItemFromCart"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Delete item from cart", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 109
+#line 111
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -556,17 +558,17 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 110
+#line 112
     testRunner.Given("I have created a cart and added an item", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 111
+#line 113
     testRunner.And("I set a DELETE request at the API path variable endpoint /carts/<:cartId>/items/<" +
                         ":itemId>", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 112
+#line 114
  testRunner.When("I send the API request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 113
+#line 115
  testRunner.Then("the API should return the status 204", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
                 TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
@@ -585,7 +587,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "quantity",
                             "null",
                             ""});
-#line 114
+#line 116
     testRunner.And("the cart should now have the following properties:", ((string)(null)), table12, "And ");
 #line hidden
             }
@@ -601,7 +603,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "createNewOrder"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a new order", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 123
+#line 125
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -621,13 +623,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 124
+#line 126
  testRunner.Given("I get the API access token", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 125
+#line 127
  testRunner.And("I have created a cart and added an item", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 126
+#line 128
  testRunner.And("I set a POST request at the API endpoint /orders", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table13 = new TechTalk.SpecFlow.Table(new string[] {
@@ -639,13 +641,13 @@ this.ScenarioInitialize(scenarioInfo);
                 table13.AddRow(new string[] {
                             "customerName",
                             "Mr.Bob"});
-#line 127
+#line 129
     testRunner.When("I input the following values in the request body:", ((string)(null)), table13, "When ");
 #line hidden
-#line 131
+#line 133
     testRunner.When("I send the API request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 132
+#line 134
     testRunner.Then("the API should return the status 201", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
                 TechTalk.SpecFlow.Table table14 = new TechTalk.SpecFlow.Table(new string[] {
@@ -660,7 +662,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "orderId",
                             "",
                             "orderId"});
-#line 133
+#line 135
  testRunner.And("the API response object should have the following properties:", ((string)(null)), table14, "And ");
 #line hidden
             }
@@ -676,7 +678,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "getSingleOrders"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get single order", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 141
+#line 143
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -696,19 +698,19 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 142
+#line 144
  testRunner.Given("I get the API access token", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 143
+#line 145
     testRunner.And("I have created a new order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 144
+#line 146
     testRunner.And("I set a GET request at the API path variable endpoint /orders/<:orderId>", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 145
+#line 147
  testRunner.When("I send the API request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 146
+#line 148
  testRunner.Then("the API should return the status 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
                 TechTalk.SpecFlow.Table table15 = new TechTalk.SpecFlow.Table(new string[] {
@@ -723,7 +725,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "id",
                             "<orderId>",
                             ""});
-#line 147
+#line 149
  testRunner.And("the API response object should have the following properties:", ((string)(null)), table15, "And ");
 #line hidden
             }
@@ -739,7 +741,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "getAllOrders"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get all orders", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 154
+#line 156
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -759,19 +761,19 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 155
+#line 157
  testRunner.Given("I get the API access token", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 156
+#line 158
     testRunner.And("I have created a new order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 157
+#line 159
  testRunner.And("I set a GET request at the API endpoint /orders", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 158
+#line 160
  testRunner.When("I send the API request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 159
+#line 161
  testRunner.Then("the API should return the status 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
                 TechTalk.SpecFlow.Table table16 = new TechTalk.SpecFlow.Table(new string[] {
@@ -786,7 +788,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "id",
                             "<orderId>",
                             ""});
-#line 160
+#line 162
  testRunner.And("the API response object should have the following properties:", ((string)(null)), table16, "And ");
 #line hidden
             }

@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "RamQuestSuperMarket": {
+    "SpecflowApiTesting": {
       "commandName": "Project",
       "environmentVariables": {
         "ENVIRONMENT": "ci"

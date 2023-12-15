@@ -1,6 +1,8 @@
 ﻿Feature: GroceryStoreApi
 
 Test Grocery Store API
+This feature file contains generic steps for maximum reusability
+Downside to this is longer scenarios and less descriptive step definitions
 
 @getApiStatus
 

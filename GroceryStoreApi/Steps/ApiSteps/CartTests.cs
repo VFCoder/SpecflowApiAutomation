@@ -27,7 +27,7 @@ namespace GroceryStoreApi.Steps.ApiSteps
         public RestClient _client;
         public RestRequest _request;
         public IRestResponse _response;
-        private GeneralSteps _commonSteps;
+        private GenericSteps _commonSteps;
         private readonly string _authUrl;
         private readonly string _baseUrl;
         private List<JObject> _products;
@@ -42,10 +42,10 @@ namespace GroceryStoreApi.Steps.ApiSteps
             _apiClient = new RestClient(_apiUrl);
             _request = new RestRequest();
             _response = new RestResponse();
-            _commonSteps = new GeneralSteps(_scenarioContext);
+            _commonSteps = new GenericSteps(_scenarioContext);
         }
 
-        [Given(@"I have created a cart")]
+/*        [Given(@"I have created a cart")]
         public void GivenIHaveCreatedACart()
         {
             _request = new RestRequest("/carts", Method.POST);
@@ -59,7 +59,7 @@ namespace GroceryStoreApi.Steps.ApiSteps
 
             GlobalObjects.AddOrUpdate("cartId", GlobalObjects.CartId);
 
-        }
+        }*/
 
         [When(@"I get items from cart")]
         public void WhenIGetItemsFromCart()

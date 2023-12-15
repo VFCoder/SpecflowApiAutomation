@@ -78,7 +78,7 @@ namespace GroceryStoreApi.Features
         [NUnit.Framework.CategoryAttribute("validateCart")]
         [NUnit.Framework.TestCaseAttribute("4646", "1", null)]
         [NUnit.Framework.TestCaseAttribute("4643", "2", null)]
-        public virtual void AddItemsToCart(string productID, string quantity, string[] exampleTags)
+        public virtual void AddItemsToCart(string productId, string quantity, string[] exampleTags)
         {
             string[] @__tags = new string[] {
                     "validateCart"};
@@ -88,8 +88,8 @@ namespace GroceryStoreApi.Features
             }
             string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            argumentsOfScenario.Add("Product ID", productID);
-            argumentsOfScenario.Add("Quantity", quantity);
+            argumentsOfScenario.Add("productId", productId);
+            argumentsOfScenario.Add("quantity", quantity);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add items to cart", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 7
 this.ScenarioInitialize(scenarioInfo);
@@ -118,10 +118,10 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("I have created a cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 10
- testRunner.When("I add <products> and <quantities> to the cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When(string.Format("I add {0} and {1} to the cart", productId, quantity), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 11
- testRunner.Then("the cart should contain those <products> and <quantities>", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then(string.Format("the cart should contain those {0} and {1}", productId, quantity), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

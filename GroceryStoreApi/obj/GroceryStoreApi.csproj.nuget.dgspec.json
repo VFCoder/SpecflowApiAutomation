@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vincent Field\\source\\repos\\GroceryStoreApiAutomation\\GroceryStoreApiAutomation\\GroceryStoreApi\\GroceryStoreApi.csproj": {}
+    "C:\\Users\\Vincent Field\\source\\repos\\SpecFlowApiAutomationFramework\\SpecFlowApiAutomationFramework\\GroceryStoreApi\\GroceryStoreApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vincent Field\\source\\repos\\GroceryStoreApiAutomation\\GroceryStoreApiAutomation\\GroceryStoreApi\\GroceryStoreApi.csproj": {
+    "C:\\Users\\Vincent Field\\source\\repos\\SpecFlowApiAutomationFramework\\SpecFlowApiAutomationFramework\\GroceryStoreApi\\GroceryStoreApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vincent Field\\source\\repos\\GroceryStoreApiAutomation\\GroceryStoreApiAutomation\\GroceryStoreApi\\GroceryStoreApi.csproj",
+        "projectUniqueName": "C:\\Users\\Vincent Field\\source\\repos\\SpecFlowApiAutomationFramework\\SpecFlowApiAutomationFramework\\GroceryStoreApi\\GroceryStoreApi.csproj",
         "projectName": "GroceryStoreApi",
-        "projectPath": "C:\\Users\\Vincent Field\\source\\repos\\GroceryStoreApiAutomation\\GroceryStoreApiAutomation\\GroceryStoreApi\\GroceryStoreApi.csproj",
+        "projectPath": "C:\\Users\\Vincent Field\\source\\repos\\SpecFlowApiAutomationFramework\\SpecFlowApiAutomationFramework\\GroceryStoreApi\\GroceryStoreApi.csproj",
         "packagesPath": "C:\\Users\\Vincent Field\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vincent Field\\source\\repos\\GroceryStoreApiAutomation\\GroceryStoreApiAutomation\\GroceryStoreApi\\obj\\",
+        "outputPath": "C:\\Users\\Vincent Field\\source\\repos\\SpecFlowApiAutomationFramework\\SpecFlowApiAutomationFramework\\GroceryStoreApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Vincent Field\\AppData\\Roaming\\NuGet\\NuGet.Config",

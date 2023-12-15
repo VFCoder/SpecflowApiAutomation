@@ -12,15 +12,11 @@ namespace Drivers
             _currentWebDriverLazy = new Lazy<IWebDriver>(CreateWebDriver);
         }
 
-        /// <summary>
         /// The Selenium IWebDriver instance
-        /// </summary>
         public IWebDriver Current => _currentWebDriverLazy.Value;
 
-        /// <summary>
         /// Creates the Selenium web driver (opens a browser)
-        /// </summary>
-        /// <returns></returns>
+
         private IWebDriver CreateWebDriver()
         {
             //We use the Chrome browser
@@ -33,9 +29,7 @@ namespace Drivers
             return chromeDriver;
         }
 
-        /// <summary>
         /// Disposes the Selenium web driver (closing the browser) after the Scenario completed
-        /// </summary>
         public void Dispose()
         {
             if (_isDisposed)

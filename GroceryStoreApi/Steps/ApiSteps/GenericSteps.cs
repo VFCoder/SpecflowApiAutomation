@@ -11,7 +11,7 @@ using TechTalk.SpecFlow;
 namespace GroceryStoreApi.Steps.ApiSteps
 {
     [Binding]
-    public class GeneralSteps
+    public class GenericSteps
     {
         private readonly IConfiguration _configuration;
         public ScenarioContext _scenarioContext;
@@ -24,7 +24,7 @@ namespace GroceryStoreApi.Steps.ApiSteps
         private readonly string _baseUrl;
 
 
-        public GeneralSteps(ScenarioContext scenarioContext)
+        public GenericSteps(ScenarioContext scenarioContext)
         {
             _scenarioContext = scenarioContext;
             _configuration = scenarioContext.Get<IConfiguration>("Configuration");
